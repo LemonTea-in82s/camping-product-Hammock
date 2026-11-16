@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="620" viewBox="0 0 1520 620" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">传统弧垂布兜式与多点绷紧平躺式吊床的承托结构对比</title>
+<desc id="diagram-desc">左侧展示两端收拢的柔性床布自然弧垂。右侧以矩形款示意上下两层绳路，上绳斜拉悬挂，下绳与床面处于同一水平面，配合横撑展开睡面。上方虚线表示网帐和外帐。具体受力路径及配套随产品设计变化。</desc>
+<defs>
+  <style>
+    text{font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#eaf0fa}
+    .heading{font-size:26px;font-weight:700}.sub{font-size:16px;fill:#8fa3c4}
+    .label{font-size:19px;font-weight:600}.copy{font-size:19px}.fine{font-size:15px;fill:#8fa3c4}
+    .line{fill:none;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+    .tree{stroke:#6c849b;stroke-width:2.5;opacity:.8}.leader{stroke:#8fa3c4;stroke-width:1.4}
+    .soft{stroke:#3bc6c8;stroke-width:2.7}.taut{stroke:#f28c28;stroke-width:2.7}
+  </style>
+  <g id="tree" class="line tree">
+    <path d="M-10 92 L-10 310 M10 83 L10 310 M-10 154 L-41 126 M10 184 L35 159 M-10 310 L-25 322 M10 310 L26 322"/>
+    <path d="M0 16 C-37 27-49 57-39 78 C-76 97-64 140-25 142 C-10 161 25 159 39 136 C75 139 77 100 51 86 C61 54 35 24 0 16Z"/>
+    <path d="M-15 161 L15 161 M-15 166 L15 166" stroke-width="4"/>
+  </g>
+</defs>
+<rect width="1520" height="620" fill="#0b1626"/>
+<rect x="20" y="20" width="720" height="548" rx="18" fill="#101e33" stroke="#283c55"/>
+<rect x="780" y="20" width="720" height="548" rx="18" fill="#101e33" stroke="#694427"/>
+<rect x="52" y="47" width="4" height="28" fill="#3bc6c8"/>
+<text class="heading" x="70" y="70">传统弧垂布兜式</text>
+<text class="sub" x="70" y="101">常见柔性布兜结构</text>
+<rect x="812" y="47" width="4" height="28" fill="#f28c28"/>
+<text class="heading" x="830" y="70">多点绷紧平躺式</text>
+<text class="sub" x="830" y="101">Lay-flat hammock · 以矩形款示意</text>
+
+<use href="#tree" x="139" y="83"/>
+<use href="#tree" x="642" y="83"/>
+<path class="line soft" d="M154 246 L226 284 M627 246 L564 284"/>
+<path class="line soft" d="M226 284 C315 352 463 357 564 284 C500 424 320 421 226 284Z" fill="#3bc6c8" fill-opacity=".07"/>
+<path class="line soft" d="M226 284 Q391 414 564 284 M248 306 Q385 383 542 308" opacity=".5"/>
+<path class="line soft" d="M270 323 Q285 351 309 369 M502 327 Q490 353 469 373" opacity=".45"/>
+<circle cx="226" cy="284" r="4" fill="#3bc6c8"/><circle cx="564" cy="284" r="4" fill="#3bc6c8"/>
+<text class="label" x="322" y="189">端部集中收拢</text>
+<path class="line leader" d="M327 202 L258 246 L230 279"/>
+<text class="label" x="62" y="377">柔性床布</text>
+<path class="line leader" d="M154 369 L274 345"/>
+<text class="label" x="425" y="444">受载自然弧垂</text>
+<path class="line leader" d="M438 419 L415 385"/>
+<text class="copy" x="56" y="501">床布在两端集中悬挂，受载后形成弧垂。</text>
+<text class="copy" x="56" y="535">配齐网帐、雨布及保温件，也可用于过夜。</text>
+
+<use href="#tree" x="866" y="83"/>
+<use href="#tree" x="1418" y="83"/>
+<g class="line taut">
+  <g id="upper-suspension" data-role="upper-suspension">
+    <path d="M880 246 L959 350 M880 246 L1038 292 M1403 246 L1250 350 M1403 246 L1329 292" opacity=".7"/>
+  </g>
+  <g id="lower-level-straps" data-role="lower-level-straps" data-plane="same-horizontal-plane-as-bed">
+    <path class="lower-tree-wraps" d="M851 319 L881 319 M851 324 L881 324 M1403 319 L1433 319 M1403 324 L1433 324" stroke="#8fa3c4" stroke-width="3"/>
+    <path class="lower-straps" d="M880 321 L959 350 M880 321 L1038 292 M1403 321 L1250 350 M1403 321 L1329 292" stroke-width="3.4"/>
+    <circle cx="880" cy="321" r="3.8" fill="#f28c28" stroke="none"/>
+    <circle cx="1403" cy="321" r="3.8" fill="#f28c28" stroke="none"/>
+  </g>
+  <path d="M959 350 L1250 350 L1329 292 L1038 292 Z" fill="#f28c28" fill-opacity=".06"/>
+  <path d="M959 350 L1038 292 M1250 350 L1329 292" stroke-width="6"/>
+  <path d="M959 350 Q1096 389 1250 350" opacity=".55"/>
+</g>
+<g class="line" stroke="#f4bf8d" stroke-width="1.1" opacity=".48">
+  <path d="M1015 342 L1080 299 M1060 342 L1125 299 M1105 342 L1170 299 M1150 342 L1215 299 M1195 342 L1260 299"/>
+  <path d="M989 328 L1277 328 M1005 315 L1293 315"/>
+</g>
+<g class="line" stroke="#8fa3c4" stroke-width="1.5" stroke-dasharray="7 7" opacity=".65">
+  <path d="M969 270 L1136 181 L1364 258 L1197 310 Z"/>
+  <path d="M1019 285 Q1108 213 1212 288 M1051 292 L1212 288 L1272 268"/>
+</g>
+<circle cx="959" cy="350" r="4.5" fill="#f28c28"/><circle cx="1250" cy="350" r="4.5" fill="#f28c28"/>
+<circle cx="1038" cy="292" r="4.5" fill="#f28c28"/><circle cx="1329" cy="292" r="4.5" fill="#f28c28"/>
+<text class="label" x="1038" y="151">网帐＋外帐防护</text>
+<path class="line leader" d="M1151 161 L1151 193"/>
+<text class="label" x="955" y="185">上绳斜拉悬挂</text>
+<path class="line leader" d="M977 197 L960 237 L942 264"/>
+<text class="label" x="808" y="417">下绳水平张紧</text>
+<text class="fine" x="808" y="443">与床面处于同一水平面</text>
+<path class="line leader" d="M952 397 L938 368 L920 336"/>
+<text class="label" x="1224" y="433">横撑／框架撑开睡面</text>
+<path class="line leader" d="M1287 412 L1290 371 L1293 326"/>
+<text class="copy" x="816" y="501">结构展开睡面，形成更平整、开放的睡眠区。</text>
+<text class="copy" x="816" y="535">部分设计由匹配睡垫参与支撑和底部保温。</text>
+<text class="fine" x="760" y="603" text-anchor="middle">承托机制示意，结构与外形依SKU变化。具体受载形状、调平方式及稳定性以实物验证为准。</text>
+</svg>
