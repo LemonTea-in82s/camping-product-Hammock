@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>平躺过夜吊床｜市场容量与新款空间</title><style>:root {
+  color-scheme: dark;
+  --bg: #09111f;
+  --card: #111e31;
+  --inset: #0d192a;
+  --line: #2b3d56;
+  --ink: #eef3fa;
+  --muted: #adbed5;
+  --orange: #ff9b42;
+  --teal: #52cbd1;
+  --older: #8ba5c5;
+  font: 15px/1.65 Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 15px; }
+body { margin: 0; background: var(--bg); color: var(--ink); }
+h1, h2, h3, p, figure { margin: 0; }
+a { color: var(--teal); text-underline-offset: 3px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
+strong { color: var(--orange); font-weight: 700; }
+.scope { background: #172235; border-bottom: 1px solid #51402e; color: #f4bf83; font-size: 13px; font-weight: 650; }
+.shell { width: min(100% - 56px, 1216px); margin-inline: auto; }
+.scope .shell { padding: 9px 0; }
+main { padding: 34px 0 44px; }
+header { display: grid; gap: 12px; }
+.eyebrow, .meta, .source, .small { color: var(--muted); font-size: 13px; }
+.eyebrow { display: flex; align-items: center; justify-content: space-between; gap: 10px 24px; flex-wrap: wrap; }
+.eyebrow span:first-child { color: var(--orange); font-weight: 650; }
+h1 { font-size: clamp(29px, 4vw, 45px); line-height: 1.16; letter-spacing: -.035em; }
+.premise { max-width: 850px; color: #d0def0; }
+.verdict { display: grid; gap: 4px; margin-top: 9px; padding: 14px 18px; background: #172339; border: 1px solid #37445a; border-left: 3px solid var(--orange); border-radius: 9px; }
+.verdict strong { font-size: 17px; }
+.verdict p { color: #d6e2f1; font-size: 14px; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 24px; }
+nav a { color: #d4e1f2; font-size: 13px; text-decoration: none; border: 1px solid var(--line); padding: 6px 12px; border-radius: 7px; }
+nav a:hover { color: var(--orange); border-color: var(--orange); }
+section { background: var(--card); border: 1px solid var(--line); border-radius: 13px; padding: 22px 24px; margin-bottom: 17px; min-width: 0; }
+h2 { font-size: clamp(20px, 2.6vw, 25px); line-height: 1.35; padding-left: 12px; border-left: 3px solid var(--orange); margin-bottom: 9px; }
+h3 { font-size: 16px; line-height: 1.45; margin: 0 0 8px; }
+.context { color: #c7d5e8; margin-bottom: 14px; }
+.metric-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 13px 0 16px; }
+.metric { min-width: 0; background: var(--inset); border: 1px solid var(--line); border-radius: 9px; padding: 12px 15px; }
+.metric .label { display: block; color: var(--muted); font-size: 12px; }
+.metric b { display: block; margin: 3px 0; font-size: clamp(20px, 2.7vw, 30px); font-variant-numeric: tabular-nums; line-height: 1.35; color: var(--orange); }
+.metric .small { display: block; }
+.chart-box { margin: 14px 0; border: 1px solid var(--line); background: var(--inset); border-radius: 10px; padding: 12px 14px 6px; }
+.chart-head { display: flex; gap: 8px 18px; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+.chart-head h3 { margin-bottom: 0; }
+.legend { display: flex; gap: 6px 16px; flex-wrap: wrap; color: var(--muted); font-size: 12px; }
+.dot { width: 9px; height: 9px; display: inline-block; border-radius: 50%; margin-right: 6px; background: var(--series-color); }
+.chart-scroll, .table-scroll { overflow-x: auto; scrollbar-color: #526882 var(--inset); }
+svg { width: 100%; min-width: 665px; display: block; }
+svg text { fill: var(--muted); font: 12px Inter, "PingFang SC", sans-serif; }
+.grid-line { stroke: #2a3b53; }
+.trend-line { stroke: var(--series-color); fill: none; stroke-width: 2.6; stroke-linejoin: round; }
+.marker { fill: var(--series-color); }
+.hit { fill: transparent; pointer-events: all; cursor: crosshair; }
+.hint, .month-guide { visibility: hidden; pointer-events: none; }
+.month-guide { stroke: #58708c; stroke-dasharray: 4 4; }
+.point:hover .hint, .point:focus .hint, .point:hover .month-guide, .point:focus .month-guide { visibility: visible; }
+.hint rect { fill: #0b1627; stroke: #6386a7; }
+.hint text { fill: #edf4fd; font-size: 13px; }
+.mini-head { margin-top: 17px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { border-bottom: 1px solid var(--line); text-align: left; padding: 8px 10px; vertical-align: top; }
+thead { background: #182943; }
+th { color: #e1eaf8; font-weight: 650; }
+tbody th { color: var(--ink); }
+.wide-table { min-width: 610px; }
+.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.table-scroll { border-radius: 7px; }
+.table-scroll:focus-visible { outline: 2px solid var(--teal); }
+.source { margin-top: 10px; }
+.small.note { margin-top: 8px; }
+.take { padding: 10px 13px; background: #18263a; border-left: 3px solid var(--orange); border-radius: 7px; margin: 13px 0 0; }
+#room .room-step { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
+#room .room-step > p { color: #d8e4f3; max-width: 970px; }
+.room-comparison { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 9px 0; }
+.room-comparison > div { background: var(--inset); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; }
+.room-comparison span { display: block; font-size: 12px; color: var(--muted); }
+.room-comparison b { display: block; font-size: clamp(17px, 2.4vw, 25px); font-variant-numeric: tabular-nums; }
+.room-comparison > div:last-child b, .gain-key span:first-child b { color: var(--orange); }
+.room-gain { margin: 11px 0; }
+.gain-bar { height: 14px; border-radius: 6px; background: #7294b5; overflow: hidden; }
+.gain-bar span { height: 100%; display: block; background: var(--orange); }
+.gain-key { display: flex; justify-content: space-between; gap: 5px 14px; flex-wrap: wrap; margin-top: 5px; font-size: 13px; color: var(--muted); }
+.gain-key span:last-child b { color: #c1dbf5; }
+.room-example { margin-top: 11px; background: var(--inset); border: 1px solid var(--line); border-radius: 8px; padding: 10px 13px; }
+.room-example p + p { margin-top: 5px; }
+.model { font-size: 12px; color: var(--muted); display: block; }
+.total-row { background: #172740; font-weight: 650; }
+details { border: 1px solid var(--line); border-radius: 9px; background: var(--inset); padding: 10px 14px; margin-top: 13px; }
+summary { font-weight: 650; color: #cfdef2; cursor: pointer; }
+details p, details .table-scroll { margin-top: 8px; }
+footer { font-size: 12px; color: var(--muted); padding: 4px 0; }
+@media (max-width: 730px) {
+  .shell { width: calc(100% - 24px); }
+  main { padding: 25px 0 35px; }
+  .scope .shell { font-size: 12px; }
+  section { padding: 15px 14px; }
+  .metric-grid { gap: 7px; }
+  .metric { padding: 9px 8px; }
+  .metric b { font-size: 20px; }
+  .metric .small, .metric .label { font-size: 11px; }
+  .room-comparison > div { padding: 6px 7px; }
+  table { font-size: 13px; }
+}
+@media print {
+  :root { color-scheme: light; --bg: #fff; --card: #fff; --inset: #f6f7fa; --line: #c7cfdb; --ink: #142237; --muted: #44566d; --orange: #a65012; --teal: #17606f; }
+  .shell { width: 100%; }
+  .scope { background: #fff; color: #91480e; }
+  .premise, .context, .verdict p, #room .room-step > p, thead th, summary { color: #293e58; }
+  .gain-key span:last-child b { color: #38597c; }
+  .verdict, .take, thead, .total-row { background: #f1f3f7; }
+  nav { display: none; }
+  section { break-inside: auto; box-shadow: none; }
+  h2, h3 { break-after: avoid; }
+  figure, .metric-grid, .room-comparison, .room-gain { break-inside: avoid; }
+  svg { min-width: 0; }
+}
+</style></head>
+<body>
+<div class="scope"><div class="shell">数据限制 · 美国亚马逊现有项目样本，Prime 会员参考价 &gt; $30 · 最新完整月为 2026 年 10 月</div></div>
+<main class="shell">
+<header>
+  <div class="eyebrow"><span>吊床项目 · 11 月 17 日评审补充</span><span>2026.11.19</span></div>
+  <h1>平躺过夜吊床的市场容量与新款空间</h1>
+  <p class="premise">拟做款差异尚未验证。市场有多大、销量增长由谁拿到、近似款能卖多少，决定我们能否用市场趋势支持这款产品。</p>
+  <div class="verdict"><strong>样本仍在扩容，成交却进一步向头部集中</strong>
+  <p>成熟品牌的平躺新款有持续成交。</p></div>
+</header>
+<nav aria-label="评审问题"><a href="#size">1 · 市场容量</a><a href="#room">2 · 需求与新款空间</a><a href="#benchmark">3 · 直接竞品销量</a><a href="#sources">数据口径</a><a href="index.html">← 返回评审目录</a></nav>
+
+<section id="size">
+  <h2>1　平躺过夜吊床一年卖多少件？</h2>
+  <p class="context">会上问件数，是为了看清高单价、使用场景较窄的吊床究竟能卖多少件。先用平躺销量看这个细分的规模，再把范围收窄到与拟做款相近的价格和配置。</p>
+  <div class="metric-grid">
+    <div class="metric"><span class="label">近 12 个月平躺估算量</span><b>5,989 件</b><span class="small">2025.11–2026.10 · 前 12 个月 4,359 件</span></div>
+    <div class="metric"><span class="label">近 12 个月占过夜样本</span><b>13.6%</b><span class="small">约每 100 件过夜吊床中 14 件是平躺款</span></div>
+    <div class="metric"><span class="label">2026 年旺季销量</span><b>2,513 件</b><span class="small">5–8 月 · 2025 年同期 1,670 件</span></div>
+  </div>
+  <figure class="chart-box">
+    <div class="chart-head"><h3>平躺子集的 12 个月节奏</h3><div class="legend"><span><i class="dot" style="--series-color:#8ba5c5" aria-hidden="true"></i>2024.11–2025.10</span><span><i class="dot" style="--series-color:#52cbd1" aria-hidden="true"></i>2025.11–2026.10</span><span>件 · 悬停查看月度数值</span></div></div>
+    <div class="chart-scroll"><svg id="annual-trend" viewBox="0 0 1080 249" role="group" aria-label="平躺子集两期月销量"><line class="grid-line" x1="52" x2="1058" y1="208.0" y2="208.0"/><text x="42" y="212.0" text-anchor="end">0</text><line class="grid-line" x1="52" x2="1058" y1="170.8" y2="170.8"/><text x="42" y="174.8" text-anchor="end">200</text><line class="grid-line" x1="52" x2="1058" y1="133.6" y2="133.6"/><text x="42" y="137.6" text-anchor="end">400</text><line class="grid-line" x1="52" x2="1058" y1="96.4" y2="96.4"/><text x="42" y="100.4" text-anchor="end">600</text><line class="grid-line" x1="52" x2="1058" y1="59.2" y2="59.2"/><text x="42" y="63.2" text-anchor="end">800</text><line class="grid-line" x1="52" x2="1058" y1="22.0" y2="22.0"/><text x="42" y="26.0" text-anchor="end">1000</text><text x="52.0" y="231" text-anchor="middle">11 月</text><text x="143.5" y="231" text-anchor="middle">12 月</text><text x="234.9" y="231" text-anchor="middle">1 月</text><text x="326.4" y="231" text-anchor="middle">2 月</text><text x="417.8" y="231" text-anchor="middle">3 月</text><text x="509.3" y="231" text-anchor="middle">4 月</text><text x="600.7" y="231" text-anchor="middle">5 月</text><text x="692.2" y="231" text-anchor="middle">6 月</text><text x="783.6" y="231" text-anchor="middle">7 月</text><text x="875.1" y="231" text-anchor="middle">8 月</text><text x="966.5" y="231" text-anchor="middle">9 月</text><text x="1058.0" y="231" text-anchor="middle">10 月</text><polyline class="trend-line" style="--series-color:#8ba5c5" points="52.0,161.1 143.5,123.4 234.9,168.6 326.4,163.2 417.8,145.1 509.3,134.5 600.7,139.0 692.2,138.4 783.6,110.9 875.1,133.0 966.5,133.8 1058.0,134.2"/><circle class="marker" style="--series-color:#8ba5c5" cx="52.0" cy="161.1" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="143.5" cy="123.4" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="234.9" cy="168.6" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="326.4" cy="163.2" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="417.8" cy="145.1" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="509.3" cy="134.5" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="600.7" cy="139.0" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="692.2" cy="138.4" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="783.6" cy="110.9" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="875.1" cy="133.0" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="966.5" cy="133.8" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="1058.0" cy="134.2" r="3.4"/><polyline class="trend-line" style="--series-color:#52cbd1" points="52.0,125.4 143.5,109.4 234.9,166.5 326.4,159.6 417.8,125.4 509.3,133.4 600.7,112.8 692.2,57.2 783.6,104.4 875.1,90.3 966.5,88.2 1058.0,109.4"/><circle class="marker" style="--series-color:#52cbd1" cx="52.0" cy="125.4" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="143.5" cy="109.4" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="234.9" cy="166.5" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="326.4" cy="159.6" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="417.8" cy="125.4" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="509.3" cy="133.4" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="600.7" cy="112.8" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="692.2" cy="57.2" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="783.6" cy="104.4" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="875.1" cy="90.3" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="966.5" cy="88.2" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="1058.0" cy="109.4" r="3.4"/><g class="point" tabindex="0" role="img" aria-label="2024-11 252 件，2025-11 444 件"><line class="month-guide" x1="52.0" x2="52.0" y1="22" y2="208"/><circle class="hit" cx="52.0" cy="161.1" r="10"/><circle class="hit" cx="52.0" cy="125.4" r="10"/><g class="hint" transform="translate(64.0 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2024-11　252 件</text><text x="12" y="47">2025-11　444 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2024-12 455 件，2025-12 530 件"><line class="month-guide" x1="143.5" x2="143.5" y1="22" y2="208"/><circle class="hit" cx="143.5" cy="123.4" r="10"/><circle class="hit" cx="143.5" cy="109.4" r="10"/><g class="hint" transform="translate(155.5 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2024-12　455 件</text><text x="12" y="47">2025-12　530 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2025-01 212 件，2026-01 223 件"><line class="month-guide" x1="234.9" x2="234.9" y1="22" y2="208"/><circle class="hit" cx="234.9" cy="168.6" r="10"/><circle class="hit" cx="234.9" cy="166.5" r="10"/><g class="hint" transform="translate(246.9 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2025-01　212 件</text><text x="12" y="47">2026-01　223 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2025-02 241 件，2026-02 260 件"><line class="month-guide" x1="326.4" x2="326.4" y1="22" y2="208"/><circle class="hit" cx="326.4" cy="163.2" r="10"/><circle class="hit" cx="326.4" cy="159.6" r="10"/><g class="hint" transform="translate(338.4 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2025-02　241 件</text><text x="12" y="47">2026-02　260 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2025-03 338 件，2026-03 444 件"><line class="month-guide" x1="417.8" x2="417.8" y1="22" y2="208"/><circle class="hit" cx="417.8" cy="145.1" r="10"/><circle class="hit" cx="417.8" cy="125.4" r="10"/><g class="hint" transform="translate(429.8 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2025-03　338 件</text><text x="12" y="47">2026-03　444 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2025-04 395 件，2026-04 401 件"><line class="month-guide" x1="509.3" x2="509.3" y1="22" y2="208"/><circle class="hit" cx="509.3" cy="134.5" r="10"/><circle class="hit" cx="509.3" cy="133.4" r="10"/><g class="hint" transform="translate(521.3 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2025-04　395 件</text><text x="12" y="47">2026-04　401 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2025-05 371 件，2026-05 512 件"><line class="month-guide" x1="600.7" x2="600.7" y1="22" y2="208"/><circle class="hit" cx="600.7" cy="139.0" r="10"/><circle class="hit" cx="600.7" cy="112.8" r="10"/><g class="hint" transform="translate(612.7 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2025-05　371 件</text><text x="12" y="47">2026-05　512 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2025-06 374 件，2026-06 811 件"><line class="month-guide" x1="692.2" x2="692.2" y1="22" y2="208"/><circle class="hit" cx="692.2" cy="138.4" r="10"/><circle class="hit" cx="692.2" cy="57.2" r="10"/><g class="hint" transform="translate(704.2 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2025-06　374 件</text><text x="12" y="47">2026-06　811 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2025-07 522 件，2026-07 557 件"><line class="month-guide" x1="783.6" x2="783.6" y1="22" y2="208"/><circle class="hit" cx="783.6" cy="110.9" r="10"/><circle class="hit" cx="783.6" cy="104.4" r="10"/><g class="hint" transform="translate(795.6 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2025-07　522 件</text><text x="12" y="47">2026-07　557 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2025-08 403 件，2026-08 633 件"><line class="month-guide" x1="875.1" x2="875.1" y1="22" y2="208"/><circle class="hit" cx="875.1" cy="133.0" r="10"/><circle class="hit" cx="875.1" cy="90.3" r="10"/><g class="hint" transform="translate(834.0 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2025-08　403 件</text><text x="12" y="47">2026-08　633 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2025-09 399 件，2026-09 644 件"><line class="month-guide" x1="966.5" x2="966.5" y1="22" y2="208"/><circle class="hit" cx="966.5" cy="133.8" r="10"/><circle class="hit" cx="966.5" cy="88.2" r="10"/><g class="hint" transform="translate(834.0 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2025-09　399 件</text><text x="12" y="47">2026-09　644 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2025-10 397 件，2026-10 530 件"><line class="month-guide" x1="1058.0" x2="1058.0" y1="22" y2="208"/><circle class="hit" cx="1058.0" cy="134.2" r="10"/><circle class="hit" cx="1058.0" cy="109.4" r="10"/><g class="hint" transform="translate(834.0 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2025-10　397 件</text><text x="12" y="47">2026-10　530 件</text></g></g></svg></div>
+  </figure>
+  <h3 class="mini-head">我们这个价位，能直接比较的量有多少？</h3>
+  <p class="context">项目拟定到手价为 <strong>$129.99–139.99</strong>。按 11 月 12 日报价筛查，平躺样本在这个窄价带没有直接可比款。可用上方相邻的 $150–200 档、带防虫网和外帐且睡垫自配的 3 款做参照。</p>
+  <div class="table-scroll" tabindex="0"><table class="wide-table" id="near-price"><thead><tr><th scope="col" class="">相近配置</th><th scope="col" class="">11 月 12 日报价</th><th scope="col" class="num">2026 年 7 月</th><th scope="col" class="num">2025 年 5–8 月</th><th scope="col" class="num">2026 年 5–8 月</th></tr></thead><tbody><tr><th scope="row">Night Cat DC-07<span class="model"><a href="https://www.amazon.com/dp/B0FLQBFWD3">B0FLQBFWD3</a></span></th><td>$159.99</td><td class="num">165.0</td><td class="num">—</td><td class="num">442.0</td></tr><tr><th scope="row">Night Cat DC-04<span class="model"><a href="https://www.amazon.com/dp/B0BX34QGQ5">B0BX34QGQ5</a></span></th><td>$169.99–$186.99</td><td class="num">102.0</td><td class="num">314.0</td><td class="num">358.0</td></tr><tr><th scope="row">Lawson Blue Ridge<span class="model"><a href="https://www.amazon.com/dp/B000YLIX7W">B000YLIX7W</a></span></th><td>$199.99</td><td class="num">3.4</td><td class="num">140.9</td><td class="num">65.4</td></tr><tr><th scope="row">相近配置已知合计</th><td>&gt;$150 至 $200</td><td class="num">270.4</td><td class="num">454.9</td><td class="num">865.4</td></tr></tbody></table></div>
+  <p class="small note">件数沿用市场底表，Lawson 按产品组分配，所以会出现小数。报价采用同 SKU 的 Prime 参考价，缺有效 Prime 报价时沿用公开价。价带是报价截面，用来比较配置，不代表每月实付。最贴近的 DC-07 历史可核优惠曾到 $127.99，日常报价差还需要和活动价一起看。 <a href="%E4%B8%93%E9%A1%B9%E5%8F%82%E8%80%83_%E4%B8%8A%E5%B8%82%E4%B8%8E%E5%A4%87%E8%B4%A7%E9%A3%8E%E9%99%A9_300%E4%BB%B6%E6%96%B9%E6%A1%88_20261109.html">竞品历史报价记录</a></p>
+  <div class="take"><strong>容量判断</strong>　它在过夜吊床中仍是小细分。约六千件是样本的年规模，相近配置只有其中一部分，更接近本款的竞争范围。</div>
+  <p class="source">市场口径与上游数据见 <a href="02_%E5%B8%82%E5%9C%BA%E5%AE%B9%E9%87%8F%E4%B8%8E%E9%94%80%E5%94%AE%E8%B6%8B%E5%8A%BF%E7%9C%8B%E6%9D%BF.html">02 市场容量与销售趋势</a>。</p>
+</section>
+
+<section id="room">
+  <h2>2　需求增加了多少，还能容纳同质新款吗？</h2>
+  <p class="context">我们的款和已有产品差不多。会上问“超趋势”，是想知道买家有没有买得更多，以及这些订单会不会也给评价少的新链接。</p>
+  <div class="take"><strong>这个细分还在增长。</strong></div>
+
+  <div class="room-step">
+    <h3>第一步｜同一个旺季，真的多卖了多少？</h3>
+    <div class="room-comparison" aria-label="两年旺季估算销量">
+      <div><span>2025 年 5–8 月</span><b>1,670 件</b></div>
+      <div><span>2026 年 5–8 月</span><b>2,513 件</b></div>
+      <div><span>同比多卖</span><b>+843 件</b></div>
+    </div>
+    <p>按已知数据多卖了约一半。即使只对比两年都有记录的同款同月，也多卖 <strong>719 件</strong>。我们看到的平躺吊床销量还在涨。</p>
+  </div>
+
+  <div class="room-step">
+    <h3>第二步｜多卖出来的量，谁拿到了？</h3>
+    <div class="room-gain" aria-label="旺季估算销量增加量">
+      <div class="gain-bar" role="img" aria-label="Haven 和 Night Cat 增加 794 件，其余品牌净增 49 件">
+        <span style="width:94.1874%"></span>
+      </div>
+      <div class="gain-key"><span><b>+794 件</b> Haven 和 Night Cat</span><span><b>+49 件</b> 其余品牌合计</span></div>
+    </div>
+    <p>有销量的款从 <strong>11 款增到 13 款</strong>，有销量的品牌仍是原来那 7 个。多出来的两款都是 Night Cat，一款继承了<strong>旧评论</strong>，另一款是<strong>含气垫的高价套装</strong>。</p>
+  </div>
+
+  <div class="room-step">
+    <h3>第三步｜这对我们的款意味着什么？</h3>
+    <p>现有数据能看到<strong>已有品牌的新款卖得动</strong>。要判断我们这款，也得看价位和配置接近、从少量评价起步的新链接，能不能在普通月份持续有单。</p>
+    <div class="room-example">
+      <p><strong>市场走平也能进新款，只要有买家改选它。</strong> 比如下一年旺季仍卖 2,513 件，新款卖出 100 件，其他款合计就只剩 2,413 件。这 100 件来自市场份额重新分配。</p>
+      <p>如果总量不涨，同类款继续变多，相似的新款又普遍卖不动，就是这个市场偏拥挤的信号。</p>
+    </div>
+  </div>
+
+  <details id="room-evidence"><summary>查看销量核算和款型例子</summary>
+    <p>两期有记录的估算量从 1,670 件增至 2,513 件，净增 843 件（+50.5%）。同款同月的 53 对记录净增 719 件（+43.1%），两段 12 个月用同样的方法也增 +28.9%。</p>
+    <p>Haven 和 Night Cat 增加 794 件，占已知净增的 94.2%。合计份额从 70.2% 升至 78.3%。其他品牌的 49 件是各品牌涨跌抵消后的净增量。</p>
+    <div class="table-scroll" tabindex="0"><table id="supply-table"><thead><tr><th scope="col" class="">指标</th><th scope="col" class="num">2025 年 5–8 月</th><th scope="col" class="num">2026 年 5–8 月</th></tr></thead><tbody><tr><th scope="row">已知估算销量（件）</th><td class="num">1,670</td><td class="num">2,513</td></tr><tr><th scope="row">截至 8 月底已上架商品组</th><td class="num">12</td><td class="num">14</td></tr><tr><th scope="row">季内有正销量的商品组</th><td class="num">11</td><td class="num">13</td></tr><tr><th scope="row">有成交的品牌数</th><td class="num">7</td><td class="num">7</td></tr><tr><th scope="row">有成交商品组的中位销量（件）</th><td class="num">141</td><td class="num">65</td></tr></tbody></table></div>
+    <p>把两期都有销量的 11 款按数量排一排，排在中间的销量从 141 件降到 65 件。</p>
+    <div class="table-scroll" tabindex="0"><table class="wide-table" id="new-cases"><thead><tr><th scope="col" class="">样本</th><th scope="col" class="num">2026 年 5–8 月</th><th scope="col" class="">能说明什么</th></tr></thead><tbody><tr><th scope="row">Night Cat DC-07<span class="model">B0FLQBFWD3</span></th><td class="num">442 件</td><td>成熟品牌的类似款可以起量。链接继承旧评，2025 年 8 月缺数，新增销量及新链接冷启动需要单独判断。</td></tr><tr><th scope="row">Night Cat 含气垫新款<span class="model">B0FT2V9BYH</span></th><td class="num">31 件</td><td>5 月缺数。9 月 83 件，10 月 78 件。成熟品牌、含垫和更高价同时存在。</td></tr><tr><th scope="row">Onewind 桥式<span class="model">B0FBVCRWN8</span></th><td class="num">26 件</td><td>$149.90，需自配防雨覆盖。小量成交给出旁证，配置与拟做款有差别。</td></tr></tbody></table></div>
+    <p class="small">相近价位和配置的三款里，DC-04 多卖 44 件，Lawson 少卖 76 件。DC-07 在 2025 年 8 月缺记录，新旧两季已知销量的差额包含覆盖变化。</p>
+  </details>
+  <p class="source">销量与品牌来源见 <a href="02_%E5%B8%82%E5%9C%BA%E5%AE%B9%E9%87%8F%E4%B8%8E%E9%94%80%E5%94%AE%E8%B6%8B%E5%8A%BF%E7%9C%8B%E6%9D%BF.html">02 市场容量与销售趋势</a>、<a href="03_%E5%93%81%E7%89%8C%E7%AB%9E%E4%BA%89%E5%88%86%E6%9E%90%E7%9C%8B%E6%9D%BF.html">03 品牌竞争分析</a>。</p>
+</section>
+
+<section id="benchmark">
+  <h2>3　直接对标的竞品，在美国站卖了多少件？</h2>
+  <p class="context">会上供应商提到的数量可能涉及多个站点。这里把问题落到 <strong>同款、同站点、同月份的售出估算</strong>，用最贴近的 DC-07 和同品牌相邻配置 DC-04 对看。</p>
+  <figure class="chart-box">
+    <div class="chart-head"><h3>2026 年 5–10 月｜同品牌相近配置</h3><div class="legend"><span><i class="dot" style="--series-color:#52cbd1" aria-hidden="true"></i>DC-07 · 直接对标</span><span><i class="dot" style="--series-color:#8ba5c5" aria-hidden="true"></i>DC-04 · 相邻配置</span><span>父体估算件数</span></div></div>
+    <div class="chart-scroll"><svg id="direct-trend" viewBox="0 0 1080 249" role="group" aria-label="Night Cat 两个相近款的父体月销量"><line class="grid-line" x1="52" x2="1058" y1="208.0" y2="208.0"/><text x="42" y="212.0" text-anchor="end">0</text><line class="grid-line" x1="52" x2="1058" y1="161.5" y2="161.5"/><text x="42" y="165.5" text-anchor="end">50</text><line class="grid-line" x1="52" x2="1058" y1="115.0" y2="115.0"/><text x="42" y="119.0" text-anchor="end">100</text><line class="grid-line" x1="52" x2="1058" y1="68.5" y2="68.5"/><text x="42" y="72.5" text-anchor="end">150</text><line class="grid-line" x1="52" x2="1058" y1="22.0" y2="22.0"/><text x="42" y="26.0" text-anchor="end">200</text><text x="52.0" y="231" text-anchor="middle">5 月</text><text x="253.2" y="231" text-anchor="middle">6 月</text><text x="454.4" y="231" text-anchor="middle">7 月</text><text x="655.6" y="231" text-anchor="middle">8 月</text><text x="856.8" y="231" text-anchor="middle">9 月</text><text x="1058.0" y="231" text-anchor="middle">10 月</text><polyline class="trend-line" style="--series-color:#8ba5c5" points="52.0,143.8 253.2,181.0 454.4,113.1 655.6,61.1 856.8,57.3 1058.0,139.2"/><circle class="marker" style="--series-color:#8ba5c5" cx="52.0" cy="143.8" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="253.2" cy="181.0" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="454.4" cy="113.1" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="655.6" cy="61.1" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="856.8" cy="57.3" r="3.4"/><circle class="marker" style="--series-color:#8ba5c5" cx="1058.0" cy="139.2" r="3.4"/><polyline class="trend-line" style="--series-color:#52cbd1" points="52.0,168.9 253.2,98.3 454.4,54.6 655.6,99.2 856.8,101.0 1058.0,97.3"/><circle class="marker" style="--series-color:#52cbd1" cx="52.0" cy="168.9" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="253.2" cy="98.3" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="454.4" cy="54.6" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="655.6" cy="99.2" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="856.8" cy="101.0" r="3.4"/><circle class="marker" style="--series-color:#52cbd1" cx="1058.0" cy="97.3" r="3.4"/><g class="point" tabindex="0" role="img" aria-label="2026-05 DC-04 69 件，2026-05 DC-07 42 件"><line class="month-guide" x1="52.0" x2="52.0" y1="22" y2="208"/><circle class="hit" cx="52.0" cy="143.8" r="10"/><circle class="hit" cx="52.0" cy="168.9" r="10"/><g class="hint" transform="translate(64.0 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2026-05 DC-04　69 件</text><text x="12" y="47">2026-05 DC-07　42 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2026-06 DC-04 29 件，2026-06 DC-07 118 件"><line class="month-guide" x1="253.2" x2="253.2" y1="22" y2="208"/><circle class="hit" cx="253.2" cy="181.0" r="10"/><circle class="hit" cx="253.2" cy="98.3" r="10"/><g class="hint" transform="translate(265.2 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2026-06 DC-04　29 件</text><text x="12" y="47">2026-06 DC-07　118 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2026-07 DC-04 102 件，2026-07 DC-07 165 件"><line class="month-guide" x1="454.4" x2="454.4" y1="22" y2="208"/><circle class="hit" cx="454.4" cy="113.1" r="10"/><circle class="hit" cx="454.4" cy="54.6" r="10"/><g class="hint" transform="translate(466.4 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2026-07 DC-04　102 件</text><text x="12" y="47">2026-07 DC-07　165 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2026-08 DC-04 158 件，2026-08 DC-07 117 件"><line class="month-guide" x1="655.6" x2="655.6" y1="22" y2="208"/><circle class="hit" cx="655.6" cy="61.1" r="10"/><circle class="hit" cx="655.6" cy="99.2" r="10"/><g class="hint" transform="translate(667.6 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2026-08 DC-04　158 件</text><text x="12" y="47">2026-08 DC-07　117 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2026-09 DC-04 162 件，2026-09 DC-07 115 件"><line class="month-guide" x1="856.8" x2="856.8" y1="22" y2="208"/><circle class="hit" cx="856.8" cy="57.3" r="10"/><circle class="hit" cx="856.8" cy="101.0" r="10"/><g class="hint" transform="translate(834.0 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2026-09 DC-04　162 件</text><text x="12" y="47">2026-09 DC-07　115 件</text></g></g><g class="point" tabindex="0" role="img" aria-label="2026-10 DC-04 74 件，2026-10 DC-07 119 件"><line class="month-guide" x1="1058.0" x2="1058.0" y1="22" y2="208"/><circle class="hit" cx="1058.0" cy="139.2" r="10"/><circle class="hit" cx="1058.0" cy="97.3" r="10"/><g class="hint" transform="translate(834.0 28)"><rect width="230" height="66" rx="7"/><text x="12" y="24">2026-10 DC-04　74 件</text><text x="12" y="47">2026-10 DC-07　119 件</text></g></g></svg></div>
+  </figure>
+  <div class="table-scroll" tabindex="0"><table class="wide-table" id="direct-months"><thead><tr><th scope="col" class="">商品组</th><th scope="col" class="num">5 月</th><th scope="col" class="num">6 月</th><th scope="col" class="num">7 月</th><th scope="col" class="num">8 月</th><th scope="col" class="num">9 月</th><th scope="col" class="num">10 月</th><th scope="col" class="num">5–8 月</th><th scope="col" class="num">5–10 月</th></tr></thead><tbody><tr><th scope="row">DC-07<span class="model"><a href="https://www.amazon.com/dp/B0FLQBFWD3">B0FLQBFWD3</a> · 3 色</span></th><td class="num">42</td><td class="num">118</td><td class="num">165</td><td class="num">117</td><td class="num">115</td><td class="num">119</td><td class="num">442</td><td class="num">676</td></tr><tr><th scope="row">DC-04<span class="model"><a href="https://www.amazon.com/dp/B0BX34QGQ5">B0BX34QGQ5</a> · 2 色</span></th><td class="num">69</td><td class="num">29</td><td class="num">102</td><td class="num">158</td><td class="num">162</td><td class="num">74</td><td class="num">358</td><td class="num">594</td></tr></tbody></table></div>
+  <div class="take"><strong>DC-07 有持续成交。</strong>　6–10 月连续五个月过百，8–10 月分别为 117、115、119 件。2026 年 1–10 月已知累计 806 件，2025 年 8–11 月缺数。</div>
+  <p class="small note">代表 ASIN B0FLQBFWD3 对应父体 B0GX6T8ND1。三色销量合计只计一次。2026 年 5–10 月与 11 月 13 日原始 SellerSprite 趋势逐月核对一致，属于第三方父体估算。目标款承接旧链接评论，不能用旧评数量判断这一代的销量或新品冷启动效果。</p>
+  <p class="source">产品配置与历史归属见 <a href="%E7%AB%9E%E5%AF%B9%E6%A8%AA%E5%90%91%E5%88%86%E6%9E%90_%E4%B8%89%E6%AC%BE%E5%B9%B3%E8%BA%BA%E5%90%8A%E5%BA%8A_20261114.html">三款平躺吊床竞对报告</a>，随附件可查 <a href="https://nightcat.com/products/night-cat-flat-lay-hammock-tent-portable-lightweight-camping-hammock-with-mosquito-net-waterproof-rainfly-for-1-person-outdoor-camping-green">Night Cat DC-07</a>、<a href="https://nightcat.com/products/night-cat-lay-flat-hammock-tent">Night Cat DC-04</a> 与 <a href="https://www.lawsonhammock.com/products/blue-ridge-camping-hammock">Lawson Blue Ridge</a> 的品牌商品页。</p>
+</section>
+
+<section id="sources">
+  <h2>数据口径与逐款明细</h2>
+  <p class="context">会议依据为 11 月 17 日《露营睡眠产品线规划与新品评审》。市场增量与能否容纳更多产品见 00:59:08–01:00:23，销量件数及竞品口径见 01:01:21–01:03:43，高价和小众场景的追问见 01:04:57、01:05:53。会议中的规模粗算和测算举例仅用于理解问题。</p>
+  <details><summary>计算口径与数据覆盖</summary>
+    <p>销量统计与 02 相同。平躺子集为 05B 已确认的 F03，共 14 个商品组，来自 9 个父体，包含自配防雨覆盖的平躺款。颜色合并，不同配置拆开。父体混规格按已确认的当前评论权重估算历史分配。期末已上架按已核日期判断，有成交款数按当期至少一个月记录正量统计。</p>
+    <p>近 12 个月合计按已知记录汇总，与前 12 个月相比 +37.4%。平躺样本两个 12 月窗口分别有 9 和 2 个商品月缺数。同商品同月份的计算用 157/168 对年窗记录及 53/56 对旺季记录。缺数保留，已核上架前月份按底表 0 件。两年已上市的新增款均进入各自窗口。</p>
+    <p>本项目按已筛 ASIN 回看。此前交叉核验也发现样本外的独立平躺款，无法把现有样本扩成全站普查。销量变动同时可能受促销、库存、配置迁移及样本覆盖影响。Haven 一组当前分配权重为 0，明细中的 0 是分配结果，商品层真实销量未独立取得。</p>
+  </details>
+  <details><summary>查看 14 个平躺商品组的旺季已知量</summary><div class="table-scroll" tabindex="0"><table class="wide-table" id="all-groups"><thead><tr><th scope="col" class="">款型代表 ASIN</th><th scope="col" class="">品牌</th><th scope="col" class="num">2025 年 5–8 月</th><th scope="col" class="num">2026 年 5–8 月</th><th scope="col" class="">季内缺数</th></tr></thead><tbody><tr><th scope="row"><a href="https://www.amazon.com/dp/B0B1LX2K57">B0B1LX2K57</a></th><td>Haven Tents</td><td class="num">447.5</td><td class="num">591.9</td><td>—</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B0FLQBFWD3">B0FLQBFWD3</a></th><td>Night Cat</td><td class="num">—</td><td class="num">442.0</td><td>2025-08</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B0CZ94B9NT">B0CZ94B9NT</a></th><td>Generic</td><td class="num">248.0</td><td class="num">401.0</td><td>—</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B0BX34QGQ5">B0BX34QGQ5</a></th><td>Night Cat</td><td class="num">314.0</td><td class="num">358.0</td><td>—</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B092RDQ6VW">B092RDQ6VW</a></th><td>Haven Tents</td><td class="num">231.0</td><td class="num">305.5</td><td>—</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B0BF64JVXX">B0BF64JVXX</a></th><td>Haven Tents</td><td class="num">180.5</td><td class="num">238.7</td><td>—</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B000YLIX7W">B000YLIX7W</a></th><td>Lawson Hammock</td><td class="num">140.9</td><td class="num">65.4</td><td>—</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B000OZ0FKQ">B000OZ0FKQ</a></th><td>Rothco</td><td class="num">63.0</td><td class="num">33.0</td><td>—</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B0FT2V9BYH">B0FT2V9BYH</a></th><td>Night Cat</td><td class="num">0.0</td><td class="num">31.0</td><td>2026-05</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B0FBVCRWN8">B0FBVCRWN8</a></th><td>onewind</td><td class="num">7.0</td><td class="num">26.0</td><td>2025-06</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B0CLF1LDVZ">B0CLF1LDVZ</a></th><td>Tentsile</td><td class="num">13.0</td><td class="num">9.0</td><td>—</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B07C89YJM7">B07C89YJM7</a></th><td>Lawson Hammock</td><td class="num">17.5</td><td class="num">8.1</td><td>—</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B07PPJM82N">B07PPJM82N</a></th><td>Lawson Hammock</td><td class="num">7.5</td><td class="num">3.5</td><td>—</td></tr><tr><th scope="row"><a href="https://www.amazon.com/dp/B0FPJGHMP3">B0FPJGHMP3</a></th><td>Haven Tents</td><td class="num">0.0</td><td class="num">0.0</td><td>—</td></tr></tbody></table></div></details>
+</section>
+<footer>01–06B 评审系列 · 吊床市场数据补充</footer>
+</main></body></html>
